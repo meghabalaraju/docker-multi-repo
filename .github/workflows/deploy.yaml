@@ -22,7 +22,7 @@ jobs:
       - run: docker build -t kbmegha/multi-server ./server
       - run: docker build -t kbmegha/multi-worker ./worker
 
-      - run: docker push -t kbmegha/multi-client ./client
-      - run: docker push -t kbmegha/multi-nginx ./nginx
-      - run: docker push -t kbmegha/multi-server ./server
-      - run: docker push -t kbmegha/multi-worker ./worker
+      - run: docker push kbmegha/multi-client ./client
+      - run: docker push kbmegha/multi-nginx ./nginx
+      - run: docker push kbmegha/multi-server ./server
+      - run: docker push kbmegha/multi-worker ./worker
